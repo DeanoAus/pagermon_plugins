@@ -1,0 +1,29 @@
+{
+  "name": "PlaySound",
+  "description": "Plays a sound when a message matches the regex for capcode or alias",
+  "disable": false,
+  "trigger": "message",
+  "scope": "after",
+  "config": [
+    {
+      "name": "regexPattern",
+      "label": "Capcode/Alias Regex",
+      "description": "Enter a regex to match capcodes or aliases you want to trigger a sound for",
+      "type": "text",
+      "required": false
+    },
+    {
+      "name": "soundURL",
+      "label": "Sound URL",
+      "description": "Enter the URL of the sound file to play (MP3 format recommended)",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "playForAll",
+      "label": "Play sound for all messages",
+      "description": "If checked, the sound will play for every message received",
+      "type": "checkbox"
+    }
+  ]
+}
